@@ -20,4 +20,10 @@ message Record {
 
   // Time the record was received, set by receiver
   string timeReceived = 5;
+
+  // The original publisher of the record
+  bytes publisher = 666;
+
+  // The remaining TTL of the record, in seconds
+  uint32 ttl = 777;
 }
