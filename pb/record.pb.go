@@ -34,7 +34,7 @@ type Record struct {
 	// The original publisher of the record
 	Publisher []byte `protobuf:"bytes,666,opt,name=publisher,proto3" json:"publisher,omitempty"`
 	// The remaining TTL of the record, in seconds
-	Ttl           uint32 `protobuf:"varint,777,opt,name=ttl,proto3" json:"ttl,omitempty"`
+	TTL           uint32 `protobuf:"varint,777,opt,name=TTL,proto3" json:"TTL,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -97,9 +97,9 @@ func (x *Record) GetPublisher() []byte {
 	return nil
 }
 
-func (x *Record) GetTtl() uint32 {
+func (x *Record) GetTTL() uint32 {
 	if x != nil {
-		return x.Ttl
+		return x.TTL
 	}
 	return 0
 }
@@ -114,7 +114,7 @@ const file_pb_record_proto_rawDesc = "" +
 	"\x05value\x18\x02 \x01(\fR\x05value\x12\"\n" +
 	"\ftimeReceived\x18\x05 \x01(\tR\ftimeReceived\x12\x1d\n" +
 	"\tpublisher\x18\x9a\x05 \x01(\fR\tpublisher\x12\x11\n" +
-	"\x03ttl\x18\x89\x06 \x01(\rR\x03ttlB'Z%github.com/libp2p/go-libp2p-record/pbb\x06proto3"
+	"\x03TTL\x18\x89\x06 \x01(\rR\x03TTLB'Z%github.com/libp2p/go-libp2p-record/pbb\x06proto3"
 
 var (
 	file_pb_record_proto_rawDescOnce sync.Once

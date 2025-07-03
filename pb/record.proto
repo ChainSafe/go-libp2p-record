@@ -25,5 +25,5 @@ message Record {
   bytes publisher = 666;
 
   // The remaining TTL of the record, in seconds
-  uint32 ttl = 777;
+  uint32 TTL = 777;
 }
